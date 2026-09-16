@@ -87,6 +87,21 @@ unlinked_spec.ds
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.log
+
+# Секреты
+.env
+*.key
+*.pem
+secrets.json
+
 # macOS
 **/Flutter/ephemeral/
 **/Pods/
