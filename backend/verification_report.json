@@ -1,0 +1,102 @@
+{
+  "1.jpg": {
+    "ok": true,
+    "expected": {
+      "model": "2H118",
+      "serial_number": "19424"
+    },
+    "actual": {
+      "status": "success",
+      "serial_number": "19424",
+      "model": "2H118",
+      "confidence": 0.9991,
+      "code_type": "text",
+      "bbox": [
+        208,
+        330,
+        693,
+        353
+      ]
+    }
+  },
+  "2(2).jpg": {
+    "ok": true,
+    "expected": {
+      "model": "2Б125",
+      "serial_number": "6560"
+    },
+    "actual": {
+      "status": "success",
+      "serial_number": "6560",
+      "model": "2Б125",
+      "confidence": 0.8757,
+      "code_type": "text",
+      "bbox": [
+        220,
+        255,
+        497,
+        300
+      ]
+    }
+  },
+  "3(3).jpg": {
+    "ok": true,
+    "expected": {
+      "model": "OC-3015GT",
+      "serial_number": "JY202408020001-5"
+    },
+    "actual": {
+      "status": "success",
+      "serial_number": "JY202408020001-5",
+      "model": "OC-3015GT",
+      "confidence": 0.9988,
+      "code_type": "text",
+      "bbox": [
+        336,
+        97,
+        495,
+        141
+      ]
+    }
+  },
+  "4.jpg": {
+    "ok": true,
+    "expected": {
+      "model": "KP 120",
+      "serial_number": "0509114063157"
+    },
+    "actual": {
+      "status": "success",
+      "serial_number": "0509114063157",
+      "model": "KP 120",
+      "confidence": 0.9735,
+      "code_type": "text",
+      "bbox": [
+        134,
+        138,
+        244,
+        187
+      ]
+    }
+  },
+  "5.png": {
+    "ok": true,
+    "expected": {
+      "model": "3200×175",
+      "serial_number": "BM275436"
+    },
+    "actual": {
+      "status": "success",
+      "serial_number": "BM275436",
+      "model": "3200×175",
+      "confidence": 0.9779,
+      "code_type": "text",
+      "bbox": [
+        820,
+        328,
+        1071,
+        631
+      ]
+    }
+  }
+}

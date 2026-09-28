@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Распознавание шильдика</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="scanner panel">
+      <h1>Распознавание шильдика</h1>
+      <p class="lead">Загрузите фотографию — сервис найдёт модель и серийный номер.</p>
+
+      <label class="drop" id="drop">
+        <span class="drop-content">
+          <strong id="fileName">Перетащите фото сюда</strong>
+          <span>или нажмите, чтобы выбрать JPG, PNG, WEBP, BMP, TIFF</span>
+        </span>
+        <input id="file" type="file" accept="image/*">
+      </label>
+
+      <button id="send" disabled>Распознать</button>
+
+      <section class="result" id="result" aria-live="polite">
+        <div class="card"><span>Модель</span><b id="model">—</b></div>
+        <div class="card"><span>Серийный номер</span><b id="serial">—</b></div>
+        <div class="card status" id="status"></div>
+      </section>
+
+      <p class="api-link"><a href="/docs">Открыть API / Swagger</a></p>
+    </section>
+
+    <section class="history panel">
+      <div class="history-heading">
+        <div>
+          <h2>История сканирования</h2>
+          <p>Последние 5 устройств хранятся только в этом браузере.</p>
+        </div>
+        <div class="history-actions">
+          <button class="secondary" id="downloadHistory" disabled>Скачать JSON</button>
+          <button class="secondary danger" id="clearHistory" disabled>Очистить</button>
+        </div>
+      </div>
+      <p class="empty-history" id="emptyHistory">История пока пуста.</p>
+      <ol class="history-list" id="historyList"></ol>
+    </section>
+  </main>
+</body>
+</html>
+
