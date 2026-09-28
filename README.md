@@ -1,17 +1,17 @@
-# code_scanner
+# Code Scanner
 
-code_scanner
+Система распознавания маркировки и серийных номеров оборудования по фотографии.
 
-## Getting Started
+Проект команды **PROMPT** (ИВТ-161).
 
-This project is a starting point for a Flutter application.
+## О проекте
 
-A few resources to get you started if this is your first Flutter project:
+Мобильное приложение, которое распознаёт модель и серийный номер оборудования по фотографии заводской таблички (шильдика). Заменяет ручной ввод данных при инвентаризации.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**Что умеет:**
+- Распознавание текста с шильдиков (русский + английский)
+- Извлечение модели и серийного номера
+- Локальная история сканирований
+- Поддержка Android и iOS
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Архитектура
