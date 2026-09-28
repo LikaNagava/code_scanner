@@ -1,0 +1,47 @@
+name: code_scanner
+description: "Распознавание маркировки и серийных номеров оборудования"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.3
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+  http: ^1.5.0
+  image_picker: ^1.2.0
+  shared_preferences: ^2.3.2
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.4
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/icons/app_icon.png
+  android_12:
+    color: "#FFFFFF"
+    image: assets/icons/app_icon.png
+    icon_background_color: "#FFFFFF"
+  android: true
+  ios: false
+  web: false
